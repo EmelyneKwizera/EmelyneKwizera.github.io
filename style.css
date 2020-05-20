@@ -9,8 +9,20 @@ strong{
 	color: #c27408;
 }
 ul, ol{
-	font_family: Georgia, serif,cursive;
+	font-family: Georgia, serif,cursive;
 }
 p.comment{
 	font-style: italic;
+}
+a:link{
+	color: #0ed7e6;
+}
+a:visited{
+	color: #e87509;
+}
+a:hover{
+	color: #09e8a1;
+}
+a:active{
+	color: #e809ca;
 }
