@@ -1,0 +1,16 @@
+body{
+	background-color: #c2c1c0;
+	text-align: justify;
+}
+h1,h2{
+	color: #05919e;
+}
+strong{
+	color: #c27408;
+}
+ul, ol{
+	font_family: Georgia, serif,cursive;
+}
+p.comment{
+	font-style: italic;
+}
