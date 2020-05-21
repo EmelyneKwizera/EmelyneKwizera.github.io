@@ -13,7 +13,7 @@ h1,h2{
 h1{
 	text-align: center;
 	font-size: 22pt;
-	font-style: bold;
+	font-weight: bold;
 }
 h2{
 	text-align: left; 
@@ -58,4 +58,7 @@ p.copyright{
 }
 div.after{
 	clear:left;
+}
+hr{
+	border:0.7px solid #8c8b8b; 
 }
