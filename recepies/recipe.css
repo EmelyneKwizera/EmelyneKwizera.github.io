@@ -8,6 +8,7 @@ h1,h2{
 	color: #A4A400;
 	background-color: #F0F0F0;
 	font-family: "Lucida Sans Unicode",Helvetica,Arial,sans-serif ;
+	text-decoration: underline;
 }
 h1{
 	text-align: center;
@@ -47,4 +48,14 @@ li.user_comment:before{
 li.user_comment{
 		margin-bottom: 1em;
 		padding-top:1em;
+}
+a.links{
+	display: block;
+}
+p.copyright{
+	text-align-last: right;
+	float: left;
+}
+div.after{
+	clear:left;
 }
