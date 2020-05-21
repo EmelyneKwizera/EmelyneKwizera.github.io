@@ -41,7 +41,10 @@ ul.user_quotation>li{
 	background-color:#FFFFA8;
 	list-style-type: none;
 }
-li.user_comment:{
+li.user_comment:before{
 	content: "-";
-	margin: 10px 0;
+}
+li.user_comment{
+		margin-bottom: 1em;
+		padding-top:1em;
 }
