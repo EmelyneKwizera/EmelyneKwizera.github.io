@@ -18,7 +18,6 @@ h1{
 h2{
 	text-align: left; 
 	font-size:18pt;
-	font-style:normal;
 }
 
 a{
@@ -75,4 +74,8 @@ h1, h2{
 }
 h2{
 	display: inline-block;
+}
+q{
+	quotes: none;
+	font-weight:bold;
 }
