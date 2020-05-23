@@ -1,3 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Checkout Items</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	<form action="" method="POST" enctype="application/x-www-form-urlencoded" class="container">
+		<h1>Checkout form</h1>
+		<div>
+			<h3>Personal details</h3>
+			<label for="FirstName" >First Name:</label>
+			<input type="text" id="FirstName" name="FirstName">
+			<label for="LastName">Last Name:</label>
+			<input type="text" id="LastName"name="LastName">
+			<label for="Address1">Address line1:</label>
+			<input type="text" id="Address1" name="Address1" placeholder="Street Address, apt number">
+			<label for="Address2">Address line2:</label>
+			<input type="text" id="Address2" name="Address2" placeholder="Building, floor, etc">
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city">
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state">
+			<label for="ZIP">ZIP:</label>
+			<input type="text" id="ZIP" name="ZIP">
+			<label for="country">Country:</label>
+			<input type="text" id="country" name="country">
+			<label for="phoneNum">Phone Number:</label>
+			<input type="text" id="phoneNum" name="phoneNum">
+		</div>
+		<div>
+			<h3>Billing address</h3>
+			<label for="fullName" >Full Name:</label>
+			<input type="text" id="fullName" name="fullName">
+			<label for="Address1">Address line1:</label>
+			<input type="text" id="Address1" name="Address1" placeholder="Street Address, apt number">
+			<label for="Address2">Address line2:</label>
+			<input type="text" id="Address2" name="Address2" placeholder="Building, floor, etc">
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city">
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state">
+			<label for="ZIP">ZIP:</label>
+			<input type="text" id="ZIP" name="ZIP">
+			<label for="country">Country:</label>
+			<input type="text" id="country" name="country">
+			<label for="phoneNum">Phone Number:</label>
+			<input type="text" id="phoneNum" name="phoneNum">
+		</div>
+		<div>
+			<h3>Shipping address</h3>
+			<label for="fullName" >Full Name:</label>
+			<input type="text" id="fullName" name="fullName">
+			<label for="Address1">Address line1:</label>
+			<input type="text" id="Address1" name="Address1" placeholder="Street Address, apt number">
+			<label for="Address2">Address line2:</label>
+			<input type="text" id="Address2" name="Address2" placeholder="Building, floor, etc">
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city">
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state">
+			<label for="ZIP">ZIP:</label>
+			<input type="text" id="ZIP" name="ZIP">
+			<label for="country">Country:</label>
+			<input type="text" id="country" name="country">
+			<label for="phoneNum">Phone Number:</label>
+			<input type="text" id="phoneNum" name="phoneNum">
+		</div>
+		<div>
+			<h3>Payment Information</h3>
+			<fieldset>
+				<legend>Payment Type:</legend>
+				<input type="radio" name="cc" value="visa" checked="checked" /> Visa
+				<input type="radio" name="cc" value="mastercard" /> MasterCard
+				<input type="radio" name="cc" value="amex" /> American Express
+				<input type="radio" name="cc" value="other" /> Other			
+			</fieldset>
+			<label for="other">Card Type:</label>
+			<input type="text" id="other"name="other">
+			<label for="cdname">Name on card:</label>
+			<input type="text" id="cdname" name="cdname">
+			<label for="cdnnumber">Credit card number:</label>
+			<input type="text" id="cdnnumber" name="cdnnumber">
+			<label for="cdnnumber">Credit card number:</label>
+			<input type="text" id="cdnnumber" name="cdnnumber">	
+			<label for="expirationDate">Expiration Date:</label>
+			<input type="date" id="expirationDate" name="expirationDate">
+			<label for="CSC">CSC:</label>
+			<input type="input" id="CSC" pattern="\d{3}" title="Please enter 3 digit" name="CSC">
+		</div>
+		<div>
+			<input type="radio" name="agreement">I have read and agree on to the Terms of service
+		</div>
+		<div>
+			<input type="submit" name="submit" id="submit" value="Submit">
+		</div>
+	</form>
+
+	<a href="https://validator.w3.org/check/referer"> 
+	<img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate" /> 
+    </a> 
+		<br>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">
+		<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+	</a>
+	</body>
 	
 </html>
