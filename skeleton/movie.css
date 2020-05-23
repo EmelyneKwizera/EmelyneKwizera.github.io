@@ -59,10 +59,9 @@ h1{
 	column-count: 2;
 	column-gap:2%;
 	overflow: auto;
-	column-width:47%;
 	margin-top: 15px;
-	margin-right: 2%;
-	margin-left: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
 }
 .review-text{
 	font-weight: bold;
