@@ -32,7 +32,7 @@ function increaseExistingSize(){
 	changeFont();
 	changePosition();
 	let styleValue= window.getComputedStyle(textValue).getPropertyValue('font-size');
-	textValue.style.fontSize =parseInt(styleValue)+2+"pt" ;}, 2000);
+	textValue.style.fontSize =parseInt(styleValue)+2+"pt" ;}, 500);
 }
 function removeInterval(){
 	clearInterval(intervalID);
