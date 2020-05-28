@@ -1,0 +1,46 @@
+nav{
+	background-color:maroon;
+
+}
+form{
+	background-color: lightcyan;
+}
+caption{
+	caption-side: bottom;
+}
+tr:nth-child(odd){
+	background-color:lightgray;
+}
+li:hover{
+	background-color:grey;
+}
+ul{
+	list-style-type: none;
+	outline-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+table{
+	border-top: 2px solid red;
+	padding-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+	nav{
+		float:left;
+		width:25%;
+		overflow: auto;
+		height: 100%;
+	}
+	form{
+		clear: left;
+		display:inline;
+		padding-left:30%;
+	}
+	
+}
+label{
+display:block;
+}
