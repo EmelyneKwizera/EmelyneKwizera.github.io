@@ -60,7 +60,7 @@ function loadButton(){
 	//when we check the bling box do the following
 
 	let blingChange = document.getElementById("bling");
-	  blingChange.onchange = changeBling;
+	blingChange.onchange = changeBling;
 }
 
 window.onload = loadButton;

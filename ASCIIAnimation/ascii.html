@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASCII Animation</title>
+	<link rel="stylesheet" type="text/css" href="ascii.css">
+	<script src="animations.js" type="text/javascript"></script>
+	<script src="ascii.js" type="text/javascript"></script>
+
+</head>
+<body>
+	❤️
+	<h1>CS472: ASCII Animation Viewer</h1>
+	<div>
+		<textarea id="display" name="animationView" rows="20" cols="80"></textarea>
+	</div>
+	<div class="controls">
+		<fieldset>
+			<legend>Play Controls:</legend>
+			<button name="start" id="start">Start</button>
+			<button name="stop" id="stop">Stop</button>
+
+		</fieldset>
+		<fieldset id="animationsChoice">
+			<legend>Animations:</legend>
+			<select name="animations" id="animations">
+				<option id="Blank">Blank</option>
+				<option id="EXERCISE">EXERCISE</option>
+				<option id="JUGGLER">JUGGLER</option>
+				<option id="BIKE">BIKE</option>
+				<option id="DIVE">DIVE</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Size:</legend>
+			<select name="size">
+				<option>Tiny</option>
+				<option>Small</option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>Extra Large</option>
+				<option>XXL</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Speed:</legend>
+			<label for="turbo">Turbo</label>
+			<input type="checkbox" id="turbo" name="turbo">
+		</fieldset>
+	</div>
+
+	<div class="validate">
+		<a href="https://validator.w3.org/check/referer"> 
+		<img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate" /> </a> 
+		<br>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+		</a>
+	</div>
+</body>
+</html>

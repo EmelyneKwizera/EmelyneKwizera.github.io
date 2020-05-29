@@ -1,0 +1,35 @@
+body{
+	background-color: #CCCCFF;
+	font-family: sans-serif;
+	font-size:14pt;
+	font-weight:bold;
+}
+h1{
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+}
+#display{
+	width: 90%;
+	height: 400px;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+}
+fieldset{
+	border:solid 5px black;
+	display: inline;
+	vertical-align: top;
+
+}
+div.controls{
+	display: flex;
+    justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.validate{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
