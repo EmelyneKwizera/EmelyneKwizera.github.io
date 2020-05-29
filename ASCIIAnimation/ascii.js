@@ -1,3 +1,4 @@
+"use strict";
 let startAnimation;
 let stop;
 let speed=250;
@@ -5,28 +6,30 @@ let index = 0;
 let timer = null;
 let currentAnimationValue="";
 let animationchange = null;
-var maxSpeed;
+let maxSpeed;
+let sizechange;
 
 function begginAnimation(){
 	menuControl("start");
+
+	timer=setInterval(frames,speed);
+}
+
+function changeAnimation(){
+	let animationchange = document.getElementById("animations");
+	let currentAnimationValue =animationchange.value;
+	document.getElementById("display").value = ANIMATIONS[currentAnimationValue];
+
+}
+
+
+function frames(){
 	var animationchange = document.getElementById("animations");
 	var currentAnimationValue =animationchange.value;
 	var contents= ANIMATIONS[currentAnimationValue];
 	document.getElementById("display").value = contents;
 	var split=contents.split("=====\n");
 	var frameLength = split.length;
-	timer=setInterval(frames,speed,split,frameLength);
-}
-
-function changeAnimation(){
-	var animationchange = document.getElementById("animations");
-	var currentAnimationValue =animationchange.value;
-	document.getElementById("display").value = ANIMATIONS[currentAnimationValue];
-
-}
-
-
-function frames(split,frameLength){
     var displayBox=document.getElementById("display");
     displayBox.value=split[index];
     index++;
@@ -37,7 +40,7 @@ function frames(split,frameLength){
 }
 function stopAnimation(){
 	menuControl("stop");
-	var displayBox = document.getElementById("display");
+	let displayBox = document.getElementById("display");
 	displayBox.value = currentAnimationValue;
 	
 	if (timer!=null){
@@ -50,9 +53,9 @@ function stopAnimation(){
 }
 
 function changeSize(){
-	var sizechange = document.getElementById("size");
-	var displayBox = document.getElementById("display");
-	var size = sizechange.value;
+	sizechange = document.getElementById("size");
+	let displayBox = document.getElementById("display");
+	let size = sizechange.value;
 	if(size ==="Tiny"){
 		displayBox.style.fontSize= "7pt";
 	}
@@ -74,11 +77,15 @@ function changeSize(){
 }
 
 function turboSpeed(){
-    if(maxSpeed.checked){
+    if(maxSpeed.checked==true){
     	speed=50;
+    	clearInterval(timer);
+    	timer=setInterval(frames,speed);
     }
-    else if(!maxSpeed.checked){
+    else if(maxSpeed.checked==false){
     	speed=250;
+    	clearInterval(timer);
+    	timer=setInterval(frames, speed);
     }
 	
 }
@@ -106,7 +113,7 @@ function loadWindow(){
 	animationchange = document.getElementById("animations");
     animationchange.onchange=changeAnimation;
 
-    var sizechange = document.getElementById("size");
+    sizechange = document.getElementById("size");
     sizechange.onchange=changeSize;
 
     maxSpeed = document.getElementById("turbo");
