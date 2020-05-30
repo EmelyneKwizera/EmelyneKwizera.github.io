@@ -12,7 +12,6 @@ let mkAccount = function (){
 function show(){
 
 	let account =mkAccount();
-	alert(typeof(account.name()));
 	let accountdisplay = document.getElementById("accountInfo");
 	let currentAccount = accountdisplay.value;
 	accountdisplay.value = currentAccount+"\n Account Name: "+account.name()+" Balance: "+account.balance();
