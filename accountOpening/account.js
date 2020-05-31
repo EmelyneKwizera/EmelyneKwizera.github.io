@@ -1,3 +1,11 @@
+"user strict";
+(function(){
+
+
+window.onload =function(){
+	let makeAccount=document.getElementById("createAccount");
+	makeAccount.onclick = show;
+}
 let mkAccount = function (){
 	let accountName = document.getElementById("accountName");
 	let deposit = document.getElementById("deposit");
@@ -17,9 +25,5 @@ function show(){
 	accountdisplay.value = currentAccount+"\n Account Name: "+account.name()+" Balance: "+account.balance();
 			
 } 
-	
 
-window.onload =function(){
-	let makeAccount=document.getElementById("createAccount");
-	makeAccount.onclick = show;
-}
+})();
